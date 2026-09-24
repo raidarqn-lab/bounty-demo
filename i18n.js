@@ -13,6 +13,7 @@ export function translate(text){
   else if(sub)value=sub[1]+' '+prefixes.submissions[i];
   else if(coverage)value=prefixes.coverage[i]+' '+coverage[1];
   else if(pts)value=pts[1]+' '+d.PTS;
+  else if(trim.startsWith('Not open '))value=d['Not open']+' '+translate(trim.slice(9));
   else if(trim.startsWith('Submit '))value=d.Submit+' '+translate(trim.slice(7));
   else if(trim.startsWith('View '))value=d.View+' '+translate(trim.slice(5));
   else if(trim.includes(' · '))value=trim.split(' · ').map(s=>translate(s)).join(' · ');
@@ -49,3 +50,5 @@ const leagueTranslations={"League leaderboard": ["Classement de ligue", "Clasifi
 for(const [key,values] of Object.entries(leagueTranslations))languages.forEach((language,i)=>catalog[language][key]=values[i]);
 
 for(const language of languages)catalog[language]["Desert Storm/Canyon Storm"]="Desert Storm/Canyon Storm";
+
+["Non ouverte","No abierta","Não aberta","Chưa mở","참여 불가","Nicht offen"].forEach((text,i)=>catalog[languages[i]]["Not open"]=text);
