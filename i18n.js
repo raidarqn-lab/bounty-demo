@@ -147,3 +147,16 @@ const playerSearchTranslations={
 'Type a player name or ID.':['Saisissez un nom ou un identifiant.','Escribe un nombre o ID.','Digite um nome ou ID.','Nhập tên hoặc ID người chơi.','플레이어 이름이나 ID를 입력하세요.','Spielername oder ID eingeben.'],
 'No matching player. Leave this row unmatched.':['Aucun joueur trouvé. Laissez cette ligne sans correspondance.','No se encontró jugador. Deja esta fila sin coincidencia.','Nenhum jogador encontrado. Deixe esta linha sem correspondência.','Không tìm thấy người chơi. Để dòng này chưa khớp.','일치하는 플레이어가 없습니다. 이 행은 미연결 상태로 두세요.','Kein passender Spieler. Diese Zeile nicht zuordnen.']
 };for(const [key,values] of Object.entries(playerSearchTranslations))languages.forEach((language,i)=>catalog[language][key]=values[i]);
+
+const bulkReviewTranslations={
+'Confirm all players and scores':['Confirmer tous les joueurs et scores','Confirmar todos los jugadores y puntos','Confirmar todos os jogadores e pontuações','Xác nhận tất cả người chơi và điểm','모든 플레이어 및 점수 확인','Alle Spieler und Punkte bestätigen'],
+'LATER SUBMISSIONS':['ENVOIS SUIVANTS','ENVÍOS POSTERIORES','ENVIOS POSTERIORES','LƯỢT GỬI SAU','후속 제출','SPÄTERE EINREICHUNGEN'],
+'Leaderboard already approved':['Classement déjà approuvé','Clasificación ya aprobada','Classificação já aprovada','Bảng xếp hạng đã duyệt','이미 승인된 순위표','Rangliste bereits genehmigt'],
+'Try completed leaderboard scenario':['Essayer le scénario de classement complet','Probar escenario de clasificación completa','Testar cenário de classificação completa','Thử kịch bản bảng xếp hạng đầy đủ','전체 순위표 시나리오 체험','Szenario mit vollständiger Rangliste testen'],
+'Full leaderboard approval required.':['Validation du classement complet requise.','Se requiere aprobar la clasificación completa.','É necessário aprovar a classificação completa.','Cần duyệt toàn bộ bảng xếp hạng.','전체 순위표 승인이 필요합니다.','Genehmigung der vollständigen Rangliste erforderlich.'],
+'Later submission':['Envoi suivant','Envío posterior','Envio posterior','Lượt gửi sau','후속 제출','Spätere Einreichung'],
+'Award 10 bounty points only':['Attribuer uniquement 10 points de prime','Otorgar solo 10 puntos de recompensa','Conceder apenas 10 pontos de recompensa','Chỉ trao 10 điểm thưởng','현상금 포인트 10점만 지급','Nur 10 Auftragspunkte vergeben'],
+'No points awarded.':['Aucun point attribué.','No se otorgaron puntos.','Nenhum ponto concedido.','Chưa trao điểm.','지급된 포인트 없음.','Keine Punkte vergeben.'],
+'Full review required or reward already awarded.':['Vérification complète requise ou récompense déjà attribuée.','Revisión completa necesaria o recompensa ya otorgada.','Revisão completa necessária ou recompensa já concedida.','Cần duyệt đầy đủ hoặc đã trao thưởng.','전체 검토가 필요하거나 이미 보상이 지급되었습니다.','Vollständige Prüfung nötig oder Belohnung bereits vergeben.'],
+'Same approved leaderboard. Ready for points-only approval.':['Même classement approuvé. Prêt pour attribuer les points uniquement.','Misma clasificación aprobada. Listo para aprobar solo puntos.','Mesma classificação aprovada. Pronto para aprovar apenas pontos.','Cùng bảng xếp hạng đã duyệt. Sẵn sàng duyệt chỉ điểm thưởng.','승인된 동일 순위표입니다. 포인트만 승인할 수 있습니다.','Gleiche genehmigte Rangliste. Bereit zur reinen Punktevergabe.']
+};for(const [key,values] of Object.entries(bulkReviewTranslations))languages.forEach((language,i)=>catalog[language][key]=values[i]);
