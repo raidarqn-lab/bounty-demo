@@ -1,0 +1,8 @@
+import test from 'node:test';import assert from 'node:assert/strict';
+import {createRowApprovals} from './review-row-state.js';
+const setup=()=>createRowApprovals([{profileRef:'demo-one',score:'0'},{profileRef:'demo-two',score:'125'}]);
+test('both confirmations required for every row before exporting',()=>{const s=setup();s.confirmPlayer(0,true);s.confirmScore(0,true);assert.equal(s.ready(),false);assert.throws(()=>s.approved(),/UNCONFIRMED/);s.confirmPlayer(1,true);s.confirmScore(1,true);assert.equal(s.approved()[0].score,'0');});
+test('score edits clear only score confirmation and changing back does not restore it',()=>{const s=setup();s.confirmPlayer(0,true);s.confirmScore(0,true);s.setScore(0,'5');assert.equal(s.view(0).playerConfirmed,true);assert.equal(s.view(0).scoreConfirmed,false);s.setScore(0,'0');assert.equal(s.view(0).scoreConfirmed,false);});
+test('unmatched, unknown and duplicate profile choices cannot be confirmed',()=>{const s=setup();for(const ref of ['','unknown','demo-two']){s.setProfile(0,ref);s.confirmPlayer(0,true);assert.equal(s.view(0).playerConfirmed,false);}assert.equal(s.view(1).canConfirmPlayer,false);});
+test('profile edits clear identity confirmation and preserve independently checked score',()=>{const s=setup();s.confirmPlayer(0,true);s.confirmScore(0,true);s.setProfile(0,'');s.setProfile(0,'demo-one');assert.equal(s.view(0).playerConfirmed,false);assert.equal(s.view(0).scoreConfirmed,true);});
+test('invalid scores cannot be confirmed; reset clears confirmations',()=>{const s=setup();for(const score of ['','1,000','-1','9007199254740992','NaN']){s.setScore(0,score);s.confirmScore(0,true);assert.equal(s.view(0).scoreConfirmed,false);}s.reset();assert.equal(s.view(0).score,'0');assert.equal(s.view(0).ready,false);});
