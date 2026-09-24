@@ -160,3 +160,21 @@ const bulkReviewTranslations={
 'Full review required or reward already awarded.':['Vérification complète requise ou récompense déjà attribuée.','Revisión completa necesaria o recompensa ya otorgada.','Revisão completa necessária ou recompensa já concedida.','Cần duyệt đầy đủ hoặc đã trao thưởng.','전체 검토가 필요하거나 이미 보상이 지급되었습니다.','Vollständige Prüfung nötig oder Belohnung bereits vergeben.'],
 'Same approved leaderboard. Ready for points-only approval.':['Même classement approuvé. Prêt pour attribuer les points uniquement.','Misma clasificación aprobada. Listo para aprobar solo puntos.','Mesma classificação aprovada. Pronto para aprovar apenas pontos.','Cùng bảng xếp hạng đã duyệt. Sẵn sàng duyệt chỉ điểm thưởng.','승인된 동일 순위표입니다. 포인트만 승인할 수 있습니다.','Gleiche genehmigte Rangliste. Bereit zur reinen Punktevergabe.']
 };for(const [key,values] of Object.entries(bulkReviewTranslations))languages.forEach((language,i)=>catalog[language][key]=values[i]);
+
+const submissionReviewTranslations={
+'Approved':['Approuvé','Aprobado','Aprovado','Đã duyệt','승인됨','Genehmigt'],
+'Rejected':['Rejeté','Rechazado','Rejeitado','Bị từ chối','거절됨','Abgelehnt'],
+'Reviewed':['Vérifié','Revisado','Revisado','Đã kiểm tra','검토 완료','Geprüft'],
+'Reject bounty submission':['Rejeter cet envoi','Rechazar envío de recompensa','Rejeitar envio de recompensa','Từ chối lượt gửi nhiệm vụ','현상금 제출 거절','Auftragseinreichung ablehnen'],
+'Reason for rejection':['Motif du rejet','Motivo del rechazo','Motivo da rejeição','Lý do từ chối','거절 사유','Ablehnungsgrund'],
+'Confirm rejection':['Confirmer le rejet','Confirmar rechazo','Confirmar rejeição','Xác nhận từ chối','거절 확인','Ablehnung bestätigen'],
+'Cancel':['Annuler','Cancelar','Cancelar','Hủy','취소','Abbrechen'],
+'My bounty submissions':['Mes envois de primes','Mis envíos de recompensas','Meus envios de recompensas','Các lượt gửi nhiệm vụ của tôi','내 현상금 제출 내역','Meine Auftragseinreichungen'],
+'BOUNTY':['PRIME','RECOMPENSA','RECOMPENSA','NHIỆM VỤ','현상금','AUFTRAG'],
+'SUBMITTED':['ENVOYÉ','ENVIADO','ENVIADO','ĐÃ GỬI','제출일','EINGEREICHT'],
+'APPROVED':['APPROUVÉ','APROBADO','APROVADO','ĐÃ DUYỆT','승인일','GENEHMIGT'],
+'REJECTED':['REJETÉ','RECHAZADO','REJEITADO','BỊ TỪ CHỐI','거절일','ABGELEHNT'],
+'POINTS':['POINTS','PUNTOS','PONTOS','ĐIỂM','포인트','PUNKTE'],
+'STATUS':['STATUT','ESTADO','STATUS','TRẠNG THÁI','상태','STATUS'],
+'REASON':['MOTIF','MOTIVO','MOTIVO','LÝ DO','사유','GRUND']
+};for(const [key,values] of Object.entries(submissionReviewTranslations))languages.forEach((language,i)=>catalog[language][key]=values[i]);
