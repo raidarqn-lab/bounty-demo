@@ -8,3 +8,14 @@
 @media(max-width:1100px){header .demo-badge{display:none}header{gap:14px}}
 @media(max-width:700px){header .member-badge{display:none}.header-clocks>div{gap:6px}.header-clocks time{font-size:10px}.header-clocks span{font-size:7px}}
 @media(max-width:380px){header .breadcrumb{max-width:70px}.breadcrumb span,.breadcrumb strong{display:none}header{padding:0 10px;gap:8px}}
+
+.language-picker{display:grid;gap:3px;flex-shrink:0}.language-picker>span{font-size:8px;color:var(--muted)}.language-picker select{font:11px system-ui;color:var(--text);background:#16212d;border:1px solid #365064;border-radius:4px;padding:6px 24px 6px 8px;max-width:130px}.language-picker select:focus-visible{outline:2px solid var(--lime);outline-offset:2px}
+header .demo-badge{display:none}header{height:auto;min-height:76px;flex-wrap:wrap;padding-top:10px;padding-bottom:10px}.header-clocks{margin-left:0}.hero-copy h2{overflow-wrap:break-word}.hero-copy .eyebrow{white-space:normal}.hero-copy{min-height:300px}.hero-bottom{gap:8px}.day-strip strong{overflow-wrap:break-word}
+@media(max-width:1100px){header .member-badge{display:none}}
+@media(max-width:700px){header{gap:10px}.breadcrumb{flex-basis:100%}.language-picker{margin-right:auto}.header-clocks time{font-size:10px}.header-clocks>div{flex-wrap:wrap;gap:3px 6px}.header-clocks{max-width:230px}.hero-copy h2{font-size:26px}.hero-copy{width:68%}.hero-bottom{font-size:6px}}
+
+.filters{flex-wrap:wrap}.type-icon.EVENT{background:#28213a;color:#bfa2e5;border-color:#534270}.header-clocks span{max-width:120px}.points{font-size:12px}
+
+dialog h3{font-size:13px;color:var(--cyan);margin-top:22px}#selected-instructions{padding-left:20px;font-size:12px;color:#b3c5d3;line-height:1.7}#selected-instructions li{margin-bottom:8px}
+
+.status-filter button[data-status="open"]{background:var(--lime);color:#192213;border:1px solid var(--lime);font-weight:750;padding:6px 12px}.status-filter button[data-status="open"]:hover{background:#ddff9a;border-color:#ddff9a;color:#192213}.status-filter button[data-status="open"].active{background:#ddff9a;color:#14200b;border-color:#efffcf;box-shadow:0 0 0 2px #c8ed7933}.status-filter button[data-status="open"].active:before{content:'✓ ';font-weight:900}
