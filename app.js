@@ -1,4 +1,5 @@
-import {locale, initLanguages} from './i18n.js?v=9';
+import {initReviewDemo} from './review-demo.js?v=10';
+import {locale, initLanguages} from './i18n.js?v=10';
 import {generateWeek,shift,themes} from './schedule.js?v=8';
 const $=s=>document.querySelector(s),e=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const demoNow=Date.parse('2026-09-24T04:00:00Z');let week='2026-09-21',filter='all',statusFilter='all',tab='available',selected=null,day=null;const opponents=new Map([['2026-09-21',{server:'1603',tag:'UNIi'}]]),receipts=new Map();
@@ -17,4 +18,5 @@ const clockFormat = zone => new Intl.DateTimeFormat(locale, {timeZone:zone,month
 function updateClocks(){const now=new Date(),serverClockFormat=clockFormat('UTC'),localClockFormat=clockFormat(Intl.DateTimeFormat().resolvedOptions().timeZone);for(const [id,format] of [['server-clock',serverClockFormat],['local-clock',localClockFormat]]){const clock=document.getElementById(id);clock.textContent=format.format(now);clock.dateTime=now.toISOString();}}
 updateClocks();setInterval(updateClocks,1000);
 
+initReviewDemo();
 initLanguages(()=>{render();updateClocks();});
