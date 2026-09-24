@@ -1,5 +1,5 @@
-import {initReviewDemo} from './review-demo.js?v=13';
-import {locale, initLanguages} from './i18n.js?v=13';
+import {initReviewDemo} from './review-demo.js?v=14';
+import {locale, initLanguages} from './i18n.js?v=14';
 import {generateWeek,shift,themes} from './schedule.js?v=8';
 const $=s=>document.querySelector(s),e=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const demoNow=Date.parse('2026-09-24T04:00:00Z');let week='2026-09-21',filter='all',statusFilter='all',tab='available',selected=null,day=null;const opponents=new Map([['2026-09-21',{server:'1603',tag:'UNIi'}]]),receipts=new Map();
