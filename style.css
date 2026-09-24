@@ -21,3 +21,5 @@ dialog h3{font-size:13px;color:var(--cyan);margin-top:22px}#selected-instruction
 .status-filter button[data-status="open"]{background:var(--lime);color:#192213;border:1px solid var(--lime);font-weight:750;padding:6px 12px}.status-filter button[data-status="open"]:hover{background:#ddff9a;border-color:#ddff9a;color:#192213}.status-filter button[data-status="open"].active{background:#ddff9a;color:#14200b;border-color:#efffcf;box-shadow:0 0 0 2px #c8ed7933}.status-filter button[data-status="open"].active:before{content:'✓ ';font-weight:900}
 
 .submit:disabled,.submit:disabled:hover,#simulate:disabled,#simulate:disabled:hover{background:#242b33;border-color:#39414a;color:#87909a;cursor:not-allowed;box-shadow:none}
+
+.day-strip-heading{margin:0;padding:0 18px 12px;font-size:12px;font-weight:650;color:var(--cyan);line-height:1.5}
