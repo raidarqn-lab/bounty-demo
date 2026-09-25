@@ -1,5 +1,5 @@
-import {submissionHistory,historyChanged,historyTable,submissionCode,demoMemberId} from './submission-history.js?v=23';
-import {initReviewDemo} from './review-demo.js?v=23';
+import {submissionHistory,historyChanged,historyTable,submissionCode,demoMemberId} from './submission-history.js?v=24';
+import {initReviewDemo} from './review-demo.js?v=24';
 import {locale, initLanguages} from './i18n.js?v=23';
 import {generateWeek,shift,themes} from './schedule.js?v=23';
 const $=s=>document.querySelector(s),e=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
