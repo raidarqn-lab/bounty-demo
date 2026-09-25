@@ -40,3 +40,5 @@ dialog h3{font-size:13px;color:var(--cyan);margin-top:22px}#selected-instruction
 .r4-row-grid .r4-confirm-row{grid-column:1/-1;justify-self:end;font-size:11px;padding:7px 12px;border-color:var(--cyan);color:var(--cyan)}.r4-row-grid .r4-confirm-row:disabled{cursor:default;opacity:.5}
 
 #r4-rejection{width:min(520px,calc(100vw - 32px));margin:auto;padding:24px;color:var(--text);border-radius:8px}#r4-rejection::backdrop{background:#030811cc}#r4-rejection h2{font-size:19px;margin-top:0}
+
+.portal-entry-link{font-size:12px;color:var(--cyan);text-decoration:none;border:1px solid #315263;padding:9px 12px;border-radius:5px;white-space:nowrap}
