@@ -42,3 +42,4 @@ dialog h3{font-size:13px;color:var(--cyan);margin-top:22px}#selected-instruction
 #r4-rejection{width:min(520px,calc(100vw - 32px));margin:auto;padding:24px;color:var(--text);border-radius:8px}#r4-rejection::backdrop{background:#030811cc}#r4-rejection h2{font-size:19px;margin-top:0}
 
 .portal-entry-link{font-size:12px;color:var(--cyan);text-decoration:none;border:1px solid #315263;padding:9px 12px;border-radius:5px;white-space:nowrap}
+.r4-pages{flex-wrap:wrap;max-height:210px;overflow:auto;padding-bottom:5px}.r4-pages button{min-width:92px}.r4-history-card{margin-top:14px;padding:16px;border:1px solid var(--line);background:#0a141e}.r4-history-card p{margin:6px 0}
